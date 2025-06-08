@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     //basically changing endianness of bytes because RFC1700....
     //fun read actually, "On Holy Wars and A Plea for Peace" the holy wars of byte ordering lol
     
-    //using bind() according to PA1 instructions/man page info, bind/associate it to
+    //using bind() according man page info, bind/associate it to
     //number on local machine will return -1 on error
     //server_addy has port info inside of the struct as set earlier
     if (bind(server_sock, (struct sockaddr *)&server_addy, sizeof(server_addy)) < 0) 
